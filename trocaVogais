@@ -1,0 +1,27 @@
+String palavra;
+  palavra=jTextField1.getText();
+  char[] resposta = palavra.toCharArray();
+  int ultimo=resposta.length;
+  for (int i=0;i<ultimo;i++){
+  char letra=resposta[i];
+  System.out.println("Letra: "+letra);
+  switch(letra){
+          case 'a':
+            resposta[i]='1';
+            break;
+         case 'e':
+            resposta[i]='2';
+            break;
+         case 'i':
+            resposta[i]='3';
+            break;
+         case 'o':
+            resposta[i]='4';
+            break;
+         case 'u':
+            resposta[i]='5';
+            break;
+          }
+  }
+ String str = new String(resposta);
+jTextField2.setText(str);
